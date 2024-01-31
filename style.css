@@ -1,0 +1,49 @@
+.gallery * {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-color: brown;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-auto-rows: minmax(250px, 500px);
+  background-color: cadetblue;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.grid {
+  grid-column: span 2;
+  background-image: url(photoalbum/audience-1835431_960_720.jpg);
+}
+.grid2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(photoalbum/country-946706_960_720.jpg);
+}
+.grid3 {
+  grid-row: 2;
+  grid-column: 1;
+  background-image: url(photoalbum/guitar-756326_960_720.jpg);
+}
+.grid4 {
+  grid-row: 2;
+  background-image: url(photoalbum/hand-1850120_640.jpg);
+}
+
+.grid5 {
+  grid-row: 3;
+  grid-column: span 2;
+  background-image: url(photoalbum/luck-4279432_960_720.jpg);
+}
+
+.grid6 {
+  grid-row: 3;
+  grid-column: span 2;
+  background-image: url(photoalbum/musician-349790_960_720.jpg);
+}
